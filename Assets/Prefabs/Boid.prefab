@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7189440107947533214}
-  - component: {fileID: 7189440107947533215}
+  - component: {fileID: -7987360917838907337}
   m_Layer: 0
   m_Name: Boid
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7189440107947533215
+--- !u!114 &-7987360917838907337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,13 +41,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 7189440107947533212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80b958b241f1108498bd076793a9a445, type: 3}
+  m_Script: {fileID: 11500000, guid: 784927fd5e975c848987b4b3a5839fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  range: 20
-  veiwDistance: 5
-  veiwAngle: 300
+  initSpeed: 10
+  speedMinMax: {x: 5, y: 10}
+  range: 50
+  viewDistance: 20
+  viewAngle: 300
+  avoidRadius: 10
+  edgeBuffer: 0.9
+  alignmentWeight: 5
+  separationWeight: 20
+  cohesionWeight: 0.5
+  targetWeight: 0
 --- !u!1001 &7189440107728170923
 PrefabInstance:
   m_ObjectHideFlags: 0
